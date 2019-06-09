@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DAS:Predict and Recommend</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit" >
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-signal.css">
+
+</head>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Kanit", sans-serif}
+.w3-bar,h1,button {font-family: "Kanit", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<body>
+<div class="w3-bar w3-indigo w3-card w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="{% url 'home'%}" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+        <a href="{% url 'select_group'%}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">ดูข้อมูลตาม...</a>
+    </div>
+<div class="w3-container w3-center w3-margin-top">
+        <h3 > กรอกรหัสนักศึกษาลงในช่องว่างเพื่อทำนายผลคะแนนกลางภาค</h3>
+        <form  method="POST"  class="w3-container">
+            {% csrf_token %}
+            <input class="w3-input w3-border w3-light-grey w3-large" type="text" placeholder="ตัวอย่าง: 58070001, it58070001" name="sid" required>
+            <input class="w3-button w3-center w3-black w3-large w3-margin" type="submit" value="ทำนายผล" />
+        </form>
+    </div>
+<div class = "w3-container">
+    <table class="w3-table-all w3-striped">
+{%if info%}
+<h3> นักศึกษาที่อยู่ในกลุ่ม ควรปรับปรุง ในหลักสูตร {{ class_name }} </h3>
+      <tr>
+        <th class="w3-large">รหัสนักศึกษา</th>
+        <th class="w3-large">ชื่อ-นามสกุล</th>
+        <th></th>
+      </tr>
+
+    <form method="POST">
+        {% for row in info%}
+        {% csrf_token %}
+            <tr>
+                <td class="w3-large">{{ row.student }}</td>
+                <td class="w3-large ">{{ row.stu_name }}</td>
+                <td><button class="w3-button  w3-black w3-margin w3-large" type="submit" name='user_select' value = {{ row.student }}> เลือกดูผล </button></td>
+            </tr>
+        {% endfor %}
+    </form>
+</table>
+{% endif %}
+</div>
+
+
+
+</body>
+</html>

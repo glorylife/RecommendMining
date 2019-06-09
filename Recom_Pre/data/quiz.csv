@@ -1,0 +1,225 @@
+,quiz_id,quiz_title,Type,pass_score,e_class_id,Full_score,tags
+0,44,Relational Algebra #1,practice,5.0,31,9.0,relational-algebra
+1,44,Relational Algebra #1,practice,5.0,34,9.0,relational-algebra
+2,49,Relational Algebra #1 : Assignment,practice,5.0,31,9.0,relational-algebra
+3,49,Relational Algebra #1 : Assignment,practice,5.0,34,9.0,relational-algebra
+4,55,Chapter 1,practice,5.0,31,10.0,"chapter1, theory"
+5,56,Chapter 1,practice,5.0,31,10.0,"chapter1, theory"
+6,57,Chapter 1,practice,5.0,31,10.0,"chapter1, theory"
+7,58,Chapter 1,practice,5.0,34,10.0,"chapter1, theory"
+8,60,Relational Algebra #2,practice,4.0,31,8.0,relational-algebra
+9,61,Relational Algebra #2,practice,4.0,34,8.0,relational-algebra
+10,62,Relational Algebra #2 : Assignment,practice,7.0,31,13.0,relational-algebra
+11,63,Relational Algebra #2 : Assignment,practice,7.0,34,13.0,relational-algebra
+12,64,Relational Algebra #3 : JOIN,practice,5.0,31,10.0,relational-algebra
+13,65,Relational Algebra #3 : JOIN,practice,5.0,34,10.0,relational-algebra
+14,66,Relational Algebra #3 : JOIN : Assignment,practice,5.0,31,10.0,relational-algebra
+15,67,Relational Algebra #3 : JOIN : Assignment,practice,5.0,34,10.0,relational-algebra
+16,68,Chapter2,practice,7.0,31,14.0,"chapter2, theory"
+17,69,Chapter2,practice,7.0,31,14.0,"chapter2, theory"
+18,70,Chapter2,practice,7.0,31,14.0,"chapter2, theory"
+19,71,Chapter2,practice,7.0,34,14.0,"chapter2, theory"
+20,73,Chapter3,practice,7.0,31,13.0,"chapter3, er-concept"
+21,74,Chapter3,practice,7.0,31,13.0,"chapter3, er-concept"
+22,75,Chapter3,practice,7.0,31,13.0,"chapter3, er-concept"
+23,76,Chapter3,practice,7.0,34,13.0,"chapter3, er-concept"
+24,77,SQL #4,practice,5.0,31,10.0,sql
+25,78,SQL #4 : Assignment,practice,5.0,31,10.0,sql
+26,79,SQL #4,practice,5.0,34,10.0,sql
+27,80,SQL #4 : Assignment,practice,5.0,34,9.0,sql
+28,81,Chapter3 Part II,practice,5.0,31,10.0,"chapter3, er-concept"
+29,82,Chapter3 Part II,practice,5.0,31,10.0,"chapter3, er-concept"
+30,83,Chapter3 Part II,practice,5.0,31,10.0,"chapter3, er-concept"
+31,84,Chapter3 Part II,practice,5.0,34,10.0,"chapter3, er-concept"
+32,85,ER Model Tool #1,practice,5.0,31,10.0,"er-model, chapter3"
+33,86,ER Tool Practice #1,practice,1.0,34,1.0,"er-model, chapter3"
+34,89,Chapter4,practice,8.0,31,16.0,"chapter4, eer-concept"
+35,90,Chapter4,practice,8.0,31,16.0,"chapter4, eer-concept"
+36,91,Chapter4,practice,8.0,31,16.0,"chapter4, eer-concept"
+37,92,Chapter4,practice,8.0,34,16.0,"chapter4, eer-concept"
+38,93,Conceptual Design 1,practice,5.0,31,10.0,"eer, conceptual, patient-system, chapter4, eer-model"
+39,94,Conceptual Design EER,practice,5.0,34,10.0,"eer, conceptual, patient-system, chapter4, eer-model"
+40,95,Conceptual Design 2,practice,5.0,31,10.0,"eer, conceptual, patient-system, chapter4, eer-model"
+41,96,Conceptual Design 2,practice,5.0,34,10.0,"eer, conceptual, dinner-system, chapter4, eer-model"
+42,97,Quiz # 1,quiz,20.0,31,40.0,"sql, relational-algebra"
+43,98,"Quiz # 1 Feb 12, 2018",quiz,20.0,34,40.0,"relationalalgebra, sql"
+44,99,ER Model Tool #2,practice,5.0,31,10.0,"er-model, chapter3"
+45,100,ER Tool Practice #2,practice,5.0,34,10.0,"er-model, chapter3"
+46,101,"Quiz # 1 -Feb 15,2018",quiz,17.0,34,34.0,"relatonalalgebra, sql"
+47,102,"Quiz # 1 Feb 15, 2018",quiz,20.0,31,40.0,"relational-algebra, sql"
+48,105,Data Types,practice,15.0,34,30.0,"chapter6, mapping"
+49,106,Data Types,practice,15.0,31,30.0,"chapter6, mapping"
+50,107,Practice: Conceptual Design 3,practice,5.0,31,10.0,"chapter4, eer-model"
+51,108,Practice : Conceptual Design 3,practice,5.0,34,10.0,"conceptual-design, er-model, book-online, chapter4, eer-model"
+52,109,Practice : Mapping ER to Logical,practice,5.0,31,10.0,"chapter6, mapping"
+53,110,Practice : Mapping ER to Logical,practice,5.0,34,10.0,"chapter6, mapping"
+54,111,Quiz 1 - 2018/02/19,quiz,20.0,31,40.0,"chapter3, mapping"
+55,112,DDL #5,practice,4.0,31,8.0,ddl
+56,113,DDL #5,practice,4.0,34,8.0,ddl
+57,114,DDL #5 : Assignment,practice,5.0,31,10.0,ddl
+58,115,DDL #5 : Assignment,practice,5.0,34,10.0,ddl
+59,116,Quiz 1 - 2018-02-22,quiz,20.0,31,40.0,"chapter3, mapping"
+60,117,Quiz 1 - 2018-02-22,quiz,20.0,34,40.0,"chapter3, mapping"
+61,118,Chapter 6 : Mapping Conceptual to Logical,practice,6.0,31,12.0,"chapter6, mapping"
+62,119,Chapter 6 : Mapping Conceptual to Logical,practice,6.0,34,12.0,"chapter6, mapping"
+63,120,Practice : EER Mapping,practice,5.0,31,10.0,"chapter6, mapping"
+64,121,Practice : EER Mapping,practice,5.0,34,10.0,"chapter6, mapping"
+65,122,Midterm Exam,quiz,20.0,31,40.0,midterm
+66,123,Project : Submission [6-7 March 2018],practice,0.0,31,0.0,project
+67,124,Project : Submission [6-7 March 2018],practice,0.0,34,0.0,project
+68,125,Midterm Exam,quiz,20.0,34,40.0,midterm
+69,126,DML #6,practice,7.0,31,13.0,dml
+70,127,DML #6,practice,7.0,34,13.0,dml
+71,128,DML #6 : Assignment,practice,6.0,31,12.0,dml
+72,129,DML #6 : Assignment,practice,6.0,34,12.0,dml
+73,130,SQL #13 : Assignment,practice,18.0,34,36.0,sql
+74,131,"Quiz#2-DDL,DML - Sec4",quiz,20.0,31,40.0,"ddl, dml"
+75,132,"Quiz#2-DDL,DML-Sec5",quiz,20.0,31,40.0,"ddl, dml"
+76,133,"Quiz#2-DDL,DML - Sec6",quiz,20.0,31,40.0,"ddl, dml"
+77,134,"Quiz#2-DDL,DML",quiz,20.0,34,40.0,"ddl, dml"
+78,135,SQL-Posttest-Sec5,quiz,13.0,31,25.0,sql
+79,136,SQL-Posttest-Sec4,quiz,13.0,31,25.0,sql
+80,137,SQL-Posttest,quiz,13.0,34,25.0,sql
+81,138,SQL-Posttest - Sec6,quiz,13.0,31,25.0,sql
+82,139,Project : Submission Round 2,practice,0.0,31,0.0,project
+83,140,Project : Submission Round 2,practice,0.0,34,0.0,project
+84,141,SQL-Posttest 13-3-2018 15:00,quiz,13.0,34,25.0,sql
+85,143,"Quiz#2-DDL,DML - 13-03",quiz,20.0,34,40.0,"ddl, dml"
+86,144,Project : Submission Round 3,practice,0.0,31,0.0,project
+87,145,Project : Submission Round 3,practice,0.0,34,0.0,project
+88,146,JOIN #10,practice,6.0,31,11.0,"sql, join"
+89,147,JOIN #10,practice,6.0,34,11.0,"sql, join"
+90,148,JOIN #10 : Assignment,practice,4.0,31,8.0,"sql, join"
+91,149,JOIN #10 : Assignment,practice,4.0,34,8.0,"sql, join"
+92,150,Project Summary and Logical Design Verification,practice,8.0,34,10.0,"logical-design, project, conceptual-design, er-model"
+93,151,GROUP Function #11,practice,3.0,31,5.0,"sql, group-function"
+94,152,SUBQUERIES #12,practice,4.0,31,7.0,"sql, subqueries"
+95,153,GROUP Function #11,practice,3.0,34,5.0,"sql, group-function"
+96,154,SUBQUERIES #12,practice,4.0,34,7.0,"sql, subqueries"
+97,157,GROUP Function #11 : Assignment,practice,5.0,31,10.0,"sql, group-function"
+98,158,GROUP Function #11 : Assignment,practice,5.0,34,10.0,"sql, group-function"
+99,159,Project Summary and Logical Design Verification,practice,8.0,31,10.0,"conceptual-design, logical-design, project"
+100,160,OUTER JOIN #12 : Assignment,practice,4.0,31,7.0,"sql, outer-join"
+101,161,OUTER JOIN #12 : Assignment,practice,4.0,34,7.0,"sql, outer-join"
+102,162,SUBQUERIES #12 : Assignment,practice,6.0,31,12.0,"sql, subqueries"
+103,163,SUBQUERIES #12 : Assignment,practice,6.0,34,12.0,"sql, subqueries"
+104,164,Quiz : Normalization,quiz,10.0,34,19.0,normalization
+105,165,SQL #12 : Assignment,practice,5.0,31,10.0,sql
+106,166,SQL #12 : Assignment,practice,5.0,34,10.0,sql
+107,167,SQL #13 : Assignment,practice,18.0,31,36.0,sql
+108,168,Transaction Concepts,practice,8.0,34,16.0,chapter8
+109,169,Quiz#3-sec5,quiz,25.0,31,50.0,sql
+110,170,Quiz#3-sec4,quiz,25.0,31,50.0,sql
+111,171,Quiz#3-sec6,quiz,25.0,31,50.0,sql
+112,172,Quiz#3-sec2,quiz,25.0,34,50.0,sql
+113,173,Chapter 10 : Data Warehouse,practice,10.0,34,20.0,chapter10
+114,174,Data Warehouse Design,practice,5.0,34,10.0,"data-warehouse, chapter10"
+115,176,Final Exam,quiz,35.0,34,70.0,final
+116,177,Quiz3-Thanapat,quiz,25.0,34,50.0,sql
+117,191,LAB SQL 2018-1 - Exercise,practice,7.0,39,13.0,sql
+118,192,LAB SQL 2018-1 - Exercise,practice,7.0,38,13.0,sql
+119,193,LAB SQL 1- Assignment,practice,5.0,39,10.0,sql
+120,194,LAB SQL 2018-1 - Assignment,practice,5.0,38,10.0,sql
+121,196,Practice 2018-1-Introduction Database System,practice,8.0,39,16.0,"chapter1, me-data, ddl, operational-database, database-environment, dbms, schema, datawarehouse, theory"
+122,199,Practice 2018-1 Introduction Database System,practice,8.0,38,16.0,"chapter1, meta-data, schema, ddl, operational-database, datawarehouse, data-environment, dbms, theory"
+123,200,Practice 2018-2-Relational Data Model,practice,8.0,39,16.0,"constraints, foreign-key, schema-based, relational-constraint, relational-model, theory, chapter2"
+124,201,LAB SQL 2018-2 -DDL- Exercise,practice,5.0,39,9.0,ddl
+125,202,LAB SQL 2018-2 -DDL- Exercise,practice,5.0,38,9.0,ddl
+126,203,LAB SQL 2018-2 -DDL- Assignment,practice,6.0,39,11.0,ddl
+127,204,LAB SQL 2018-2 -DDL- Assignment,practice,6.0,38,11.0,ddl
+128,205,Practice 2018-3-Conceptual Design (ER Concepts),practice,8.0,39,16.0,"er-concept, chapter3"
+129,206,Practice 2018-2-Relational Data Model,practice,8.0,38,16.0,"constraints, foreign-key, schema-base, relational-constraint, relational-model, theory, chapter2"
+130,207,Practice 2018-3 -Conceptual Design (ER Concepts),practice,8.0,38,16.0,"er-concept, chapter3"
+131,208,LAB SQL 2018-3- ER modeling -exercise,practice,3.0,38,6.0,ddl
+132,209,LAB SQL 2018-3- DDL 2 -exercise,practice,3.0,39,6.0,ddl
+133,210,Practice 2018-4.01-Conceptual Design (ER Modelling 1)-Optional practices,practice,5.0,39,10.0,"conceptual-design, er-model, cinema, chapter3"
+134,211,LAB SQL 2018-3- ER modeling -assignment,practice,5.0,38,10.0,chapter2
+135,212,LAB SQL 2018-3- DDL 2 -assignment,practice,5.0,39,10.0,chapter2
+136,213,Practice 2018-8.0-Logical Design (EER Modelling 2)-Optional Practice,practice,5.0,39,10.0,"eer-diagram, eer-model, conceptual-design, chapter5"
+137,214,Practice 2018-8-Conceptual Design (EER modelling) -Mandatory Practice,practice,5.0,39,10.0,"eer-diagram, conceptual-design, eer-model, chapter5"
+138,216,LAB 4 Relational Algebra - exercise,practice,9.0,39,18.0,relational-algebra
+139,217,LAB 4 Relational Algebra - exercise,practice,9.0,38,18.0,relational-algebra
+140,218,LAB 4 Relational Algebra - assignment,practice,11.0,39,21.0,relational-algebra
+141,219,LAB 4 Relational Algebra - assignment,practice,11.0,38,21.0,relational-algebra
+142,221, Practice 2018-4.0.3-Conceptual Design (ER modelling 4) -optional practice,practice,10.0,39,20.0,"conceptual-design, er-model, chapter3"
+143,222,Practice 2018-9 Logical Design (EER Model Mapping),practice,5.0,39,10.0,"logical-model, eer-model-mapping, chapter4, mapping"
+144,223,LAB 4 Logical Design - Assignment,practice,5.0,38,10.0,"chapter3, logical-design"
+145,224,LAB 4 Logical Design - Assignment,practice,5.0,39,10.0,"logical-design, chapter3"
+146,226,Practice 2018-5- Logical Design: (Concepts),practice,8.0,39,15.0,"logical-design, data-model-mapping, mapping, chapter4"
+147,227,Practice 2018-4.01-Conceptual Design (ER Modelling 1)-Optional Practice,practice,5.0,38,10.0,"conceptual-design, er-model, cinema-system, chapter3"
+148,228,Practice 2018-4-Conceptual Design (ER Modelling 3)-Mandatory practice,practice,5.0,39,10.0,"conceptual-design, model-mapping, class-attendance"
+149,229,Practice 2018-4.0.2-Conceptual Design (ER Modelling 2)-Optional practices,practice,5.0,39,10.0,"logical-design, model-mapping, hotel-reservation, chapter3, er-model"
+150,230,Practice 2018-4.02-Conceptual Design (ER Modelling 2-Optional practice),practice,5.0,38,10.0,"conceptual-design, er-model, hotel-reservation, chapter3"
+151,231,Practice 2018-4-Conceptual Design (ER Modelling 3)-Mandatory practice,practice,5.0,38,10.0,"conceptual-dsign, er-model, class-attendance, chapter2"
+152,232,Practice 2018-4-Conceptual Design (ER Modelling 3)-Mandatory practice,practice,5.0,39,10.0,"conceptual, er-model, class-attendance, chapter3"
+153,233,Quiz 1- Conceptual Design (ER Modelling),quiz,5.0,38,10.0,"conceptual-design, chapter2, er-model"
+154,234,Quiz 1- Conceptual Design (ER Modelling),quiz,5.0,39,10.0,"conceptual-design, er-model"
+155,235,Quiz 1- Conceptual Design (ER Modelling),quiz,5.0,39,10.0,"conceptual-model, model-mapping"
+156,236,LAB 5 - Relation Algebra - JOIN,practice,5.0,39,10.0,relational-algebra
+157,237,LAB 5 - Relation Algebra - JOIN,practice,5.0,38,10.0,relational-algebra
+158,238,LAB 5 - Relation Algebra - JOIN - Assignment,practice,5.0,39,10.0,relational-algebra
+159,239,LAB 5 - Relation Algebra - JOIN - Assignment,practice,5.0,38,10.0,relational-algebra
+160,240,LAB - ERR modeling - assignment,practice,5.0,38,10.0,"chapter4, eer-modeling"
+161,241,LAB - EER modeling - assignment,practice,5.0,39,10.0,"eer-modeling, chapter4"
+162,242,Practice 2018-5- Logical Design: (Concepts),practice,8.0,38,15.0,"logical-design, data-model-mapping, mapping, chapter4"
+163,244,"Quiz 1 - DML, DDL, Relational Algebra",quiz,28.0,39,55.0,"dml, ddl, relational-algebra"
+164,245,"Quiz 1 - DML, DDL, Relational Algebra",quiz,28.0,38,55.0,"ddl, dml, relational-algebra"
+165,247,Practice 2018-6 Logical Design (ER Model Mapping),practice,5.0,39,10.0,"logical-design, er-model-mapping, chapter3, mapping"
+166,248,Practice 2018-6 Logical Design (ER Model Mapping),practice,5.0,38,10.0,"logical-design, er-model-mapping, mapping, chapter4"
+167,249,Project_ER Design (Final Round) ,practice,1.0,39,1.0,"project-61, er-model"
+168,250,Project_ER Design (Final Round),practice,1.0,38,1.0,"project-61, er-model"
+169,251,Practice 2018-7-Database Design using EER Model (Concepts),practice,5.0,39,10.0,"eer-model, concepts, eer-concept, chapter5"
+170,254,Quiz 2- Logical Design (ER Model Mapping),quiz,5.0,38,10.0,"logical-design, er-model-mapping, chapter3, mapping"
+171,257,Quiz 2- Logical Design (ER Model Mapping),quiz,5.0,39,10.0,"logical-design, er-model-mapping, mapping"
+172,258,Quiz 2 - Logical Design (ER Model Mapping),quiz,5.0,39,10.0,"logical-design, er-model-mapping, mapping"
+173,259,Quiz 3 - Conceptual Design -EER Modelling,quiz,5.0,39,10.0,"conceptual-design, eer-model"
+174,260,Quiz 3 - Conceptual Design -EER Modelling,quiz,5.0,39,10.0,"conceptual-design, eer-model"
+175,261,Quiz 3 - Conceptual Design -EER Modelling,quiz,5.0,38,10.0,"conceptual-design, eer-model, chapter4"
+176,262,Lab 6 SQL SELECT Statement assignment ,practice,8.0,39,15.0,"sql, select"
+177,263,Lab 6 - SQL SELECT Statement - exercise,practice,5.0,39,10.0,"sql, select"
+178,264,Practice 2018-7-Database Design using EER Model (Concepts),practice,5.0,38,10.0,"eer-model, concepts, eer-concept, chapter5"
+179,265,Practice 2018-8-Conceptual Design (EER modelling) -Mandatory Practice,practice,5.0,38,10.0,"conceptual-design, eer-model, chapter5"
+180,266,Lab 6 - SQL SELECT Statement - exercise,practice,5.0,38,10.0,"sql, select"
+181,268,Lab 6 - SQL SELECT Statement - assignment,practice,8.0,38,15.0,"sql, select"
+182,271,Project_Logical Design (Final Round),practice,1.0,39,1.0,project-61
+183,272,Project_Logical Design (Final Round),practice,1.0,38,1.0,project-61
+184,273,Practice 2018-9 Logical Design (EER Model Mapping): Optional,practice,5.0,38,10.0,chapter4
+185,274,Midterm- Conceptual & Logical Design ,quiz,50.0,39,100.0,midterm
+186,275,Midterm- Conceptual & Logical Design,quiz,50.0,38,100.0,midterm
+187,277,LAB 8- JOIN exercise,practice,3.0,38,5.0,"sql, join"
+188,278,LAB 8- JOIN exercise,practice,3.0,39,5.0,"sql, join"
+189,279,LAB 8- JOIN assignment,practice,5.0,38,10.0,"sql, join"
+190,280,LAB 8- JOIN assignment,practice,5.0,39,10.0,"sql, join"
+191,284,LAB-9-OUTER-JOIN-AGGREGATE FUNCTION-EXERCISE,practice,6.0,38,12.0,"sql, outer-join"
+192,285,LAB-9-OUTER-JOIN-AGGREGATE-FUNCTION-EXERCISE,practice,6.0,39,12.0,"sql, outer-join"
+193,286,LAB-9-OUTER-JOIN-ASSIGNMENT,practice,6.0,38,11.0,"sql, outer-join"
+194,287,LAB-9-OUTER-JOIN-ASSIGNMENT,practice,6.0,39,11.0,"sql, outer-join"
+195,288,Quiz-2-RA-JOIN-SELECT-JOIN,quiz,25.0,38,50.0,"sql, select, relational-algebra, join"
+196,289,Quiz 4.0 - Normalization,quiz,8.0,39,15.0,"normalization, functional-dependencies, normal-form, chapter-5"
+197,290,"Quiz 2 - Relational Algebra (Join), SQL (Select), SQL (Join)",quiz,25.0,39,50.0,"relational-algebra, sql, join, select"
+198,291,"Quiz 2 - Relational Algebra (Join), SQL (Select), SQL (Join)",quiz,25.0,39,50.0,"relational-algebra, sql, join, select"
+199,295,Quiz 4 - Normailzation,quiz,8.0,39,15.0,"normalization, functional-dependencies, normal-form, chapter-5"
+200,296,Quiz 4 - Normailzation,quiz,8.0,38,15.0,"normalization, functional-dependencies, normal-form, chapter-5"
+201,298,LAB 11- SUBQUERIES- Exercise,practice,4.0,38,7.0,"sql, subqueries"
+202,299,LAB 11- SUBQUERIES- Exercise,practice,4.0,39,7.0,"sql, subqueries"
+203,300,LAB 11- SUBQUERIES- Assignment,practice,6.0,38,12.0,"sql, subqueries"
+204,301,LAB 11- SUBQUERIES- Assignment,practice,6.0,39,12.0,"sql, subqueries"
+205,302,Quiz 4.1 - Normailzation,quiz,8.0,39,15.0,normalization
+206,303,Quiz 4.1 - Normailzation,quiz,8.0,38,15.0,"normalization, quiz, chapter5"
+207,304,Practice 2018-10-Database System Architecture (Optional),practice,5.0,38,10.0,"chapter-6, architecture, optional"
+208,305,"Quiz 2 - Relational Algebra (Join), SQL (Select), SQL (Join) (2)",quiz,25.0,39,50.0,"relational-algebra, sql, join, select"
+209,306,Practice 2018-13 : Data Warehouse Design,practice,13.0,39,25.0,"data-warehouse, chapter-8"
+210,307,Practice 2018-10-Database System Architecture,practice,5.0,39,10.0,"chapter-6, architecture"
+211,308,LAB SQL Aggregate and group by - ASSIGNMENT,practice,13.0,39,25.0,"groupby, agg, join, sql"
+212,309,LAB SQL Aggregate and group by - ASSIGNMENT,practice,13.0,38,25.0,"sql, group-by"
+213,310,Practice 2018-11-Transaction Processing Concept,practice,8.0,39,17.0,"chapter7, transaction"
+214,311,Practice 2018-11-Transaction Processing Concept,practice,8.0,38,17.0,"chapter7, transaction"
+215,312,Practice 2018-12-Business Intelligence and Data Warehouse,practice,6.0,39,12.0,"business-intelligence, warehouse"
+216,314,Practice 2018-12-Business Intelligence and Data Warehouse,practice,6.0,38,12.0,"business-intelligence, warehouse"
+217,315,Practice 2018-13 : Data Warehouse Design,practice,13.0,38,25.0,"data-warehouse, chapter-8"
+218,316,Practice 2018-14 : No SQL Database,practice,1.0,39,2.0,nosql
+219,317,"Quiz 3-Outer Join, Aggregate Function, Subqueries",quiz,26.0,38,52.0,
+220,318,"Quiz 3 - Outer Join, Aggregate Function, Subqueries",quiz,26.0,39,52.0,
+221,319,"Quiz 3 - Outer Join, Aggregate Function, Subqueries",quiz,26.0,39,52.0,
+222,324,Final Exam,quiz,21.0,38,42.0,"final-exam, 2561"
+223,326,Final Exam,quiz,21.0,39,42.0,"final-exam, 2561"

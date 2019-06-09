@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <title>DAS:Predict and Recommend</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit" >
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-signal.css">
+    <!--graph -->
+<link
+    href="http://cdn.pydata.org/bokeh/release/bokeh-1.1.0.min.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.1.0.min.css"
+    rel="stylesheet" type="text/css">
+<link
+    href="http://cdn.pydata.org/bokeh/release/bokeh-tables-1.1.0.min.css"
+    rel="stylesheet" type="text/css">
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-1.1.0.min.js"></script>
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.1.0.min.js"></script>
+<script src="http://cdn.pydata.org/bokeh/release/bokeh-tables-1.1.0.min.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Kanit", sans-serif}
+.w3-bar,h1,button {font-family: "Kanit", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+<!-- Navbar -->
+    <div class="w3-bar w3-indigo w3-card w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="{% url 'home'%}" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    </div>
+    <body>
+    <div class="w3-container w3-center w3-margin-top">
+        <h3 > กรอกรหัสนักศึกษาลงในช่องว่างเพื่อทำนายผลคะแนนกลางภาค</h3>
+        <form  method="POST"  class="w3-container">
+            {% csrf_token %}
+            <input class="w3-input w3-border w3-light-grey w3-large" type="text" placeholder="ตัวอย่าง: 58070001, it58070001" name="sid" required>
+            <input class="w3-button w3-center w3-black w3-large w3-margin" type="submit" value="ทำนายผล" />
+        </form>
+    </div>
+    <div class="w3-container">
+        {% if answer %}
+        {% if answer == 'A' %}
+        <div class="w3-panel w3-light-grey w3-leftbar w3-border-blue">
+            <p class = "w3-large"> คอร์สเรียน {{ eclass }} | ปีการศึกษา {{  year }}</p>
+            <p class = "w3-large"> <b class = "w3-signal-black w3-text-black">{{ fullname }}</b> | รหัสนักศึกษา {{ sid }}</p>
+            <p class = "w3-xlarge"><b>ผลทำนาย:</b> คะแนนจะอยู่ในกลุ่ม <b class="w3-highway-blue"> ดีเยี่ยม (คะแนนจะอยู่ในช่วง มากกว่า Mean+1SD)</b></p>
+            <!--img src = "/Recom_Pre/img/aClass_pic.jpg" class = "w3-round" style = "width:70%"-->
+        </div>
+        {% endif%}
+
+        {% if answer == 'B' %}
+        <div class="w3-panel w3-light-grey w3-leftbar w3-border-green">
+            <p class = "w3-large"> คอร์สเรียน {{ eclass }} | ปีการศึกษา {{  year }}</p>
+            <p class = "w3-large"> <b class = "w3-signal-black w3-text-black">{{ fullname }}</b> | รหัสนักศึกษา {{ sid }}</p>
+            <p class = "w3-xlarge"><b>ผลทำนาย:</b> คะแนนจะอยู่ในกลุ่ม <b class = "w3-highway-green"> ปานกลาง (คะแนนจะอยู่ในช่วง Mean+-1SD)</b></p>
+            <!--img src = "/Recom_Pre/img/bClass_pic.jpg" class = "w3-round" style = "width:70%"-->
+        </div>
+        {% endif %}
+
+        {% if answer == 'C' %}
+        <div class="w3-panel w3-light-grey w3-leftbar w3-border-red">
+            <p class = "w3-large"> คอร์สเรียน {{ eclass }} | ปีการศึกษา {{  year }}</p>
+            <p class = "w3-large"> <b class = "w3-signal-black w3-text-black">{{ fullname }}</b> | รหัสนักศึกษา {{ sid }}</p>
+            <p class = "w3-xlarge"><b>ผลทำนาย:</b>  คะแนนจะอยู่ในกลุ่ม <b class = "w3-highway-red"> ควรปรับปรุง (คะแนนจะอยู่ในช่วง น้อยกว่า Mean-1SD) </b></p>
+            <!--img src = "/Recom_Pre/img/cClass_pic.jpg" class = "w3-round" style = "width:70%"-->
+
+        </div>
+        {% endif%}
+        <button onclick="myFunction('Demo1')" class="w3-button w3-center w3-blue"><b>แสดงคำแนะนำ</b></button>
+        <button onclick="myFunction('Demo2')" class = "w3-button w3-center w3-black"><b>แสดงผลสรุปพฤติกรรม</b></button>
+
+        <div id="Demo1" class="w3-container w3-hide">
+            <div class ="w3-panel w3-light-grey w3-leftbar w3-border-dark-grey w3-padding-16">
+                <h3>คำแนะนำ</h3>
+
+                {%if improve_read_all or improve_do or im_forget%}
+                <h3><b class = "w3-highway-brown">การปรับปรุง</b></h3>
+                  {% if improve_read_all%}
+                <ul>
+                   <b class = "w3-large w3-2019-galaxy-blue">บทเรียนที่จำเป็นต้องอ่านเนื้อหาทั้งหมด</b>
+                    {% for i in improve_read_all|safeseq %}
+                    <li>{{ i }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+
+                    {% if improve_do%}
+                <ul>
+                    <b class = "w3-large w3-2019-galaxy-blue">แบบฝึกหัดที่ต้องฝึกทำใหม่</b>
+                    {% for i in improve_do|safeseq %}
+                    <li> {{ i }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+
+
+                    {% if im_forget%}
+                <ul>
+                    <b class = "w3-large w3-2019-galaxy-blue">แบบฝึกหัดที่ต้องทำ (ยังไม่ได้ทำ)</b>
+                    {% for i in im_forget|safeseq %}
+                    <li> {{ i }}</li>
+                    {% endfor%}
+                </ul>
+                {% endif%}
+                {%endif%}
+
+                {%if enhance_read_all or enhance_read_topic or en_practice or en_forget %}
+                <h3><b class = "w3-highway-brown">การพัฒนา</b></h3>
+                   {%if enhance_read_all%}
+                <ul>
+                    <b class = 'w3-large w3-2019-galaxy-blue'>บทเรียนที่ควรอ่านเนื้อหาทั้งหมด</b>
+                    {% for i in enhance_read_all|safeseq %}
+                    <li>{{ i }}</li>
+                    {% endfor %}
+                </ul>
+                {%endif%}
+
+                    {%if enhance_read_topic%}
+                <ul>
+                    <b class = 'w3-large w3-2019-galaxy-blue'>หัวข้อในแต่ละบทเรียนที่ควรอ่าน</b>
+                    {% for i in enhance_read_topic|safeseq %}
+                    <li>{{ i }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+
+                    {%if en_practice%}
+                <ul>
+                    <b class = 'w3-large w3-2019-galaxy-blue'>แบบฝึกหัดที่ควรฝึกทำใหม่</b>
+                    {%for i in en_practice|safeseq%}
+                    <li>{{ i }}</li>
+                    {%endfor%}
+                </ul>
+                {%endif%}
+
+                    {%if en_forget%}
+                <ul>
+                    <b class = 'w3-large w3-2019-galaxy-blue'>แบบฝึกหัดที่ควรทำเพิ่ม (ยังไม่ได้ทำ)</b>
+                    {%for i in en_forget|safeseq%}
+                    <li>{{ i }}</li>
+                    {%endfor%}
+                </ul>
+                {%endif%}
+                {%endif%}
+
+                {%if optional_read_all or optional_do or op_forget%}
+                <h3><b class = "w3-highway-brown">กิจกรรมเสริม</b></h3>
+                {% if optional_read_all%}
+                <ul>
+                   <b class = 'w3-large w3-2019-galaxy-blue'>บทเรียนที่ควรทบทวนเนื้อหาทั้งหมด</b>
+                    {%for i in optional_read_all|safeseq %}
+                    <li>{{ i }}</li>
+                    {%endfor%}
+                </ul>
+                {% endif%}
+
+                    {% if optional_do%}
+                <ul>
+                    <b class = 'w3-large w3-2019-galaxy-blue'>แบบฝึกหัดที่ควรทบทวน</b>
+                    {%for i in optional_do|safeseq%}
+                    <li> {{ i }}</li>
+                    {%endfor%}
+                </ul>
+                {%endif%}
+
+                   {%if op_forget%}
+                <ul>
+                    <b class = 'w3-large w3-2019-galaxy-blue'>แบบฝึกหัดที่ควรทำเพิ่มเพื่อการทบทวน (ยังไม้ได้ทำ)</b>
+                    {%for i in op_forget|safeseq%}
+                    <li> {{ i }}</li>
+                    {%endfor%}
+                </ul>
+                {%endif%}
+                {%endif%}
+
+
+
+            </div>
+        </div>
+        <div id="Demo2" class="w3-container w3-hide">
+
+            <div class ="w3-panel w3-light-grey w3-leftbar w3-border-dark-grey w3-padding-16">
+                <h2> พฤติกรรมการเรียนรู้ </h2>
+              <div class="w3-bar w3-black">
+                <button class="w3-bar-item w3-button tablink w3-blue" onclick="openCity(event,'London')">แบบฝึกหัด</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">แบบทดสอบ</button>
+                <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')">เข้าดูเนื้อหา</button>
+              </div>
+
+            <div id="London" class="w3-container city">
+            <h3>คะแนนแบบฝึกหัด</h3>
+                {% if div%}
+                {% if script%}
+                {{ div | safe}}
+                {{ script | safe }}
+                {%endif%}
+                {%endif%}
+            </div>
+
+            <div id="Paris" class="w3-container city" style="display:none">
+            <h3>คะแนนแบบทดสอบ</h3>
+                {% if div2%}
+                {% if script2%}
+                {{ div2 | safe}}
+                {{ script2 | safe }}
+                {%endif%}
+                {%endif%}
+            </div>
+
+            <div id="Tokyo" class="w3-container city" style="display:none">
+            <h3>สัดส่วนการเข้าดูเนื้อหา</h3>
+            {% if div3%}
+                {% if script3%}
+                {{ div3 | safe}}
+                {{ script3 | safe }}
+                {%endif%}
+                {%endif%}
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+    function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";}
+    else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+    function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-blue", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-blue";
+}
+    </script>
+    {% endif %}
+    </body>
+</html>
